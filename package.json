@@ -23,6 +23,9 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --fix"
+    "*.js": [
+      "prettier --single-quote --write",
+      "eslint --fix"
+    ]
   }
 }
