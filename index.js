@@ -1,9 +1,10 @@
 print("hello world");
 console.log("hello world");
 
+// eslint-disable-next-line no-unused-vars
+let a = 5;
 
-
-// Helper function to print to the screen. 
+// Helper function to print to the screen.
 function print(line) {
   const appDiv = document.getElementById("app");
   const div = document.createElement("div");
