@@ -6,9 +6,8 @@
   "scripts": {
     "prettier": "prettier \"**/*.{js,jsx,css,json}\"",
     "format": "npm run prettier -- --write",
-    "lint": "eslint src",
-    "lint:fix": "npm run lint -- --fix",
-    "validate": "npm run prettier -- --list-different && npm run lint"
+    "lint": "eslint",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "",
   "license": "ISC",
