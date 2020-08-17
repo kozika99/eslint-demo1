@@ -12,12 +12,12 @@ npm install --save-dev husky lint-staged eslint eslint-plugin-react prettier
 eslint --init (ezt csak akkor ha nincs .eslintrc file)
 ```
 
-A .eslintrc file-ben beállítjátok hogy milyen szempontok alapján működjön az eslint 
-és amikor lefut a huskyval akkor ezeket a beállításokat fogja alkalmazni.
+A .eslintrc file-ben beállítjátok hogy milyen szempontok alapján működjön az eslint,
+ugyanezt a .prettierrc fileban is megtehetjük és amikor lefut a huskyval akkor ezeket a beállításokat fogja alkalmazni.
 
 ## Használat
 
-A package.json filehoz ezt hozzá kell adni hogy működjön a husky. 
+A package.json filehoz ezt hozzá kell adni hogy működjön a husky és a lint-staged. 
 
 ```
 "husky": {
@@ -27,7 +27,7 @@ A package.json filehoz ezt hozzá kell adni hogy működjön a husky.
   },
 "lint-staged": {
     "*.js": [
-      "prettier --single-quote --write",
+      "prettier --write",
       "eslint --fix"
     ]
   }
