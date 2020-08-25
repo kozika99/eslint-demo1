@@ -23,7 +23,7 @@ A package.json filehoz ezt hozzá kell adni hogy működjön a husky és a lint-
 ```
 "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged --allow-empty"
     }
   },
 "lint-staged": {
