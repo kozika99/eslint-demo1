@@ -47,7 +47,7 @@ Az első a prettier code formatter ami leformattálja a code-t, második pedig a
 Ha git commitolunk akkor lefut a husky a precommittal ami behívja a lint-staged ott a 2 command lefut minden js file-re majd végrehatja a módosításokat.
 
 
-## ClickUp integration with GitHub
+# ClickUp integration with GitHub
 
 GitHub hozzáadás a ClickUphoz. Settings -> Integrations -> GitHub és ahol a My repositories from GitHub fül van ott kattintsunk a + Add GitHub gombra.
 
@@ -57,11 +57,11 @@ hozzákapcsolni a kívánt Space-hez.
 
 Több lehetőség is van a használatra. 
 
-# Manualis
+## Manualis
 
 Ha rákattintunk egy taskra és a kis github iconra ott látjuk hogy pull request, branch és commit közül is tudunk választani, illetve ezeket hozzákötni a taskhoz.
 
-# Automatikus
+## Automatikus
 
 Kimásoljuk a taskId-t a kívánt tasknál és a commit bármely részére beillesztve, majd a status-t is megadva tudjuk változtatni hogy melyik táblába kerüljön át a kívánt task. 
 
