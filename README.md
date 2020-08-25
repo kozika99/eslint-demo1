@@ -46,6 +46,17 @@ Az első a prettier code formatter ami leformattálja a code-t, második pedig a
 
 Ha git commitolunk akkor lefut a husky a precommittal ami behívja a lint-staged ott a 2 command lefut minden js file-re majd végrehatja a módosításokat.
 
+# GitHub Actions
+
+Actions tabra átváltva létre kell hozni egy új workflow-t. Ott lehet választani előre megadottakból is, de magunktól is csinálhatunk egyet.
+
+Megadjuk a workflow nevét azután hogy milyen event-eknél fusson le a workflow az én esetemben ez push és pull request a master branchen, de ezt egyénileg lehet változtani.
+
+Utána megadjuk hogy hány darab jobs fusson le, ezesetben ez csak egy darab a build. Utána hogy min fusson le, pl. ubuntu. Ezután következik a folyamat előszor a checkout a repository-ra utána telepíti a node-t megadjuk hogy melyik verziót, utána clean install dependencies és build a source code. 
+
+Ha van test akkor azt a build után csak simán run: npm test el lehet végeztetni. Több workflot is fel
+
+
 
 # ClickUp integration with GitHub
 
@@ -66,4 +77,4 @@ Kimásoljuk a taskId-t a kívánt tasknál és a commit bármely részére beill
 git commit -m CU-7cppu3[review]'Test'
 ```
 
-Uj branch illetve pull requestet is létre lehet hozni. Csak rákattiunk a kívánt gombra és folytatjuk az utasításokat.
+új branch-et illetve pull requestet is létre lehet hozni. Csak rákattintunk a kívánt gombra és folytatjuk az utasításokat.
