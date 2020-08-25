@@ -66,7 +66,7 @@ Ha sikerült létrehozni akkor a push vagy pull-requestnél láthatjuk használa
 Pricing az különböző attól függően hogy milyen github csomagot használnuk- free-nél 2000min/month, pro és teams 3000min/month -ig ingyenes private reponal utána per min alapon van számlázva attól függően hogy min fut le (ubuntu, windows vagy macos). Publicnal ingyenes.
 
 Az Artifactok lehetővé teszik hogy megőrizzük az adatokat miután lefut a jobs. Az artifact egy fájl vagy fájlgyűjtemény, amely a workflow runban lett előállítva. 
-Ha lefutott a run akkor lehet menteni a buildet vagy testelni. Fel illetve  letöltei fajlokat is a githubnak van 2 hivatalos workflowja erre a célre az upload-artifacts és
+Ha lefutott a run akkor lehet menteni a buildet vagy testelni. Fel illetve  letöltei lehet fajlokat is a githubnak van 2 hivatalos workflowja erre a célre az upload-artifacts és
 download-artifacts.
 
 A legvégén tudunk deployolni ahova szeretnénk lehet ez aws, azure, stb.., ezeknek különböző actionok vannak fent a marketplacen attól függően hogy ki hova szeretné.
