@@ -52,10 +52,7 @@ Ha git commitolunk akkor lefut a husky a precommittal ami behívja a lint-staged
 GitHub hozzáadás a ClickUphoz. Settings -> Integrations -> GitHub és ahol a My repositories from GitHub fül van ott kattintsunk a + Add GitHub gombra.
 
 Ezután egy nagy lila gombra ahol az van kiírva hogy Activate GitHub. Utána kiválaszthatjuk hogy mely repokat szertenénk hozzáadni. Utoljára pedig
-
-hozzákapcsolni a kívánt Space-hez.
-
-Több lehetőség is van a használatra. 
+hozzákapcsolni a kívánt Space-hez. Több lehetőség is van a használatra. 
 
 ## Manualis
 
