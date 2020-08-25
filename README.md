@@ -52,13 +52,24 @@ Actions tabra átváltva létre kell hozni egy új workflow-t. Ott lehet válasz
 
 Megadjuk a workflow nevét azután hogy milyen event-eknél fusson le a workflow az én esetemben ez push és pull request a master branchen, de ezt egyénileg lehet változtani.
 
-Utána megadjuk hogy hány darab jobs fusson le, ezesetben ez csak egy darab a build. Utána hogy min fusson le, pl. ubuntu. Ezután következik a folyamat előszor a checkout a repository-ra utána telepíti a node-t megadjuk hogy melyik verziót, utána clean install dependencies és build a source code. 
+Utána megadjuk hogy hány darab jobs fusson le, ezesetben ez csak egy darab a build. Utána hogy min fusson le, pl. ubuntu.
+
+A GitHub-hosted runner egy virtual machine amit GitHub hostol és a GitHub Actions runner app van rá feltelepítva, de lehet saját magunk által hostolton is futtatni.
+Lehet rajta  Linux, Windows, és macOS is. Mindegyik ugyanazzal a hardwaren megy. A build mindig egy fresh runner instance fut le.
+
+Ezután következik a folyamat előszor a checkout a repository-ra utána telepíti a node-t megadjuk hogy melyik verziót, utána clean install dependencies és build a source code. 
 
 Ha van test akkor azt a build után csak simán run: npm test el lehet végeztetni. Több workflot is lehet különböző feladatokra.
 
 Ha sikerült létrehozni akkor a push vagy pull-requestnél láthatjuk használatban, ha az Actions tabre átváltunk ott megnézhetjük hogy a különböző folyamatokat. 
 
+Pricing az különböző attól függően hogy milyen github csomagot használnuk- free-nél 2000min/month, pro és teams 3000min/month -ig ingyenes private reponal utána per min alapon van számlázva attól függően hogy min fut le (ubuntu, windows vagy macos). Publicnal ingyenes.
 
+Az Artifactok lehetővé teszik hogy megőrizzük az adatokat miután lefut a jobs. Az artifact egy fájl vagy fájlgyűjtemény, amely a workflow runban lett előállítva. 
+Ha lefutott a run akkor lehet menteni a buildet vagy testelni. Fel illetve  letöltei fajlokat is a githubnak van 2 hivatalos workflowja erre a célre az upload-artifacts és
+download-artifacts.
+
+A legvégén tudunk deployolni ahova szeretnénk lehet ez aws, azure, stb.., ezeknek különböző actionok vannak fent a marketplacen attól függően hogy ki hova szeretné.
 
 # ClickUp integration with GitHub
 
