@@ -45,3 +45,28 @@ Utána a ["prettier..."] között hogy mely commandok fussanak le automatikusan.
 Az első a prettier code formatter ami leformattálja a code-t, második pedig az eslint. 
 
 Ha git commitolunk akkor lefut a husky a precommittal ami behívja a lint-staged ott a 2 command lefut minden js file-re majd végrehatja a módosításokat.
+
+
+## ClickUp integration with GitHub
+
+GitHub hozzáadás a ClickUphoz. Settings -> Integrations -> GitHub és ahol a My repositories from GitHub fül van ott kattintsunk a + Add GitHub gombra.
+
+Ezután egy nagy lila gombra ahol az van kiírva hogy Activate GitHub. Utána kiválaszthatjuk hogy mely repokat szertenénk hozzáadni. Utoljára pedig
+
+hozzákapcsolni a kívánt Space-hez.
+
+Több lehetőség is van a használatra. 
+
+# Manualis
+
+Ha rákattintunk egy taskra és a kis github iconra ott látjuk hogy pull request, branch és commit közül is tudunk választani, illetve ezeket hozzákötni a taskhoz.
+
+# Automatikus
+
+Kimásoljuk a taskId-t a kívánt tasknál és a commit bármely részére beillesztve, majd a status-t is megadva tudjuk változtatni hogy melyik táblába kerüljön át a kívánt task. 
+
+```
+git commit -m CU-7cppu3[review]'Test'
+```
+
+Uj branch illetve pull requestet is létre lehet hozni. Csak rákattiunk a kívánt gombra és folytatjuk az utasításokat.
