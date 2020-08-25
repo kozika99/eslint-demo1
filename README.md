@@ -54,7 +54,9 @@ Megadjuk a workflow nevét azután hogy milyen event-eknél fusson le a workflow
 
 Utána megadjuk hogy hány darab jobs fusson le, ezesetben ez csak egy darab a build. Utána hogy min fusson le, pl. ubuntu. Ezután következik a folyamat előszor a checkout a repository-ra utána telepíti a node-t megadjuk hogy melyik verziót, utána clean install dependencies és build a source code. 
 
-Ha van test akkor azt a build után csak simán run: npm test el lehet végeztetni. Több workflot is fel
+Ha van test akkor azt a build után csak simán run: npm test el lehet végeztetni. Több workflot is lehet különböző feladatokra.
+
+Ha sikerült létrehozni akkor a push vagy pull-requestnél láthatjuk használatban, ha az Actions tabre átváltunk ott megnézhetjük hogy a különböző folyamatokat. 
 
 
 
