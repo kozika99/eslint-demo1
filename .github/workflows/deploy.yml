@@ -1,20 +1,25 @@
-
+# Workflow neve
 name: CI
 
+# workflow disptach = manualis indítás
+# schedule cron-nal, jelenleg minden 6 óránban lefutna a workflow
 on:
   workflow_dispatch:
 
   schedule:
     - cron:  '0 */6 * * *'
 
+# ubuntu-latest distribucion fut
+# actions/checkout az leszedi a repot (nem tudom, hogy ez kell-e)
+# appleyboy/ssh az remote ssh commandokat futtat 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: 'branch/name'
-          
+          ref: 'master'
+
       - uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
