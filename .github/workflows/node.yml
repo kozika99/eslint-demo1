@@ -4,9 +4,9 @@ name: CI
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
+
 on:
   workflow_dispatch:
-    branches: [testing]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,6 +18,17 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:.github/workflows/main.yml
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - run: npm ci
+      - run: npm build
+========
+>>>>>>> master
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
@@ -29,3 +40,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+<<<<<<< HEAD
+=======
+>>>>>>>> master:.github/workflows/node.yml
+>>>>>>> master
