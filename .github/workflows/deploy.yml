@@ -6,9 +6,6 @@ name: CI
 on:
   workflow_dispatch:
 
-  schedule:
-    - cron:  '0 */6 * * *'
-
 # ubuntu-latest distribucion fut
 # actions/checkout az leszedi a repot (nem tudom, hogy ez kell-e)
 # appleyboy/ssh az remote ssh commandokat futtat 
