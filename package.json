@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier \"**/*.{js,jsx,css,json}\"",
+    "format": "npm run prettier -- --write",
+    "lint": "eslint",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "",
   "license": "ISC",
@@ -25,7 +28,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --single-quote --write",
+      "prettier --write",
       "eslint --fix"
     ]
   }
